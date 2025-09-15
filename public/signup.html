@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sign Up</title>
+    <script type="module" src="js/signup.js"></script>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 90%;
+            font-size: 14px;
+            color: #333;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .close {
+            float: right;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body style="margin:0; font-family: Arial, Helvetica, sans-serif;">
+
+    <div style="position:fixed; inset:0;
+              background: linear-gradient(135deg, #131817 0%, #110322 50%, #0b0122 100%);
+              display:flex; align-items:center; justify-content:center;">
+
+        <div role="main" aria-labelledby="signupTitle" style="width:420px; max-width:92%; background:#ffffff; border-radius:12px;
+                box-shadow: 0 10px 30px rgba(14,21,47,0.12); padding:40px 36px;
+                display:flex; flex-direction:column; align-items:center;">
+
+            <h2>Create Account</h2>
+            <form id="signupForm">
+                <label for="email" style="font-size:13px; color:#666; display:block;">Username:
+                    <input type="text" id="signupUser" required placeholder="Enter your email"
+                        style="flex:1; border:0; outline:none; border-bottom:1px solid #e6e6e6; font-size:15px; padding:6px 4px; color:#333;">
+                </label><br><br>
+
+                <label for="password" style="font-size:13px; color:#666; display:block;">Password:
+                    <input type="password" id="signupPass" required placeholder="Create a password"
+                        style="flex:1; border:0; outline:none; border-bottom:1px solid #e6e6e6; font-size:15px; padding:6px 4px; color:#333;">
+                </label><br><br>
+
+                <!-- Terms & Agreement -->
+                <label style="font-size:13px; color:#555; display:flex; align-items:center;">
+                    <input type="checkbox" id="termsCheck" required style="margin-right:6px;">
+                    I agree to the <a href="#" id="openTerms"
+                        style="color:#6a5cff; text-decoration:none; font-weight:600;">Terms &
+                        Conditions</a>
+                </label><br>
+
+                <button type="submit" style="margin-top:6px; width:100%; padding:12px 18px; border-radius:28px; border:0; cursor:pointer;
+           background: linear-gradient(90deg,#0c061f 0%,#1d163f 50%,#110931 100%);
+           color:#fff; font-weight:700; font-size:15px; box-shadow: 0 6px 18px rgba(109,77,255,0.18);">Sign Up</button>
+            </form>
+
+            <div style="width:100%; text-align:center; margin-top:18px; font-size:13px; color:#777;">
+                Already have an account? <a href='index.html'
+                    style='color:#6a5cff; text-decoration:none; font-weight:600;'>Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div class="modal" id="termsModal">
+        <div class="modal-content">
+            <span class="close" id="closeTerms">&times;</span>
+            <h3>Terms and Agreement</h3>
+            <p>
+                This website is for school activities only and not for public use.
+                It is created as a demo to show students how to build a dashboard.
+                The database is secured with Firebase rules.
+                Users only need to enter a non-specific username and password for testing.
+            </p>
+            <p>
+                By signing up, you acknowledge the terms and conditions of this website.
+                We do not collect any personal data such as your real name, email, number,
+                or password from your actual accounts.
+            </p>
+            <p>
+                For more info, you may contact: <b>rbmdeveloper.ph24@gmail.com</b>.
+                I am a BSIT student collaborating as a Back-End Developer.
+            </p>
+            <p>
+                Location: <b>University Town, Catarman, Northern Samar</b>.
+            </p>
+            <p style="font-weight:bold; color:#333;">
+                ⚠️ This website is only for those who are enrolled in the subject
+                <i>Platform Technologies</i> under Ms. Kristel Jean.
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

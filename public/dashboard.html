@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLATFORM TECHNOLOGY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .text-content {
+            max-width: 55%;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            text-align: justify;
+        }
+
+        .image-content img {
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #f39c12;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <a class='logo' href='/'> <i class="fas fa-user-graduate"></i> </a>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href='dashboard.html'>HOME</a></li>
+                <li><a href='gallery1.html'>GALLERY</a></li>
+                <li><a href='map.html'>PROFILE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="container">
+            <div class="text-content">
+                <h1>PLATFORM
+                    TECHNOLOGY</h1>
+                <h2>What is a Technology Platform?</h2>
+                <p>
+                    A <b> technology platform </b> is a structure on which users build or run successful business
+                    applications.
+                    It acts as a building block for extending and developing an application, driving innovation, and
+                    fostering business growth.
+                </p>
+                <p>
+                    Every technology platform is run by a platform owner. <i>For example, </i> if you are using a
+                    third-party solution like the SAP Business Technology Platform, SAP is the platform owner.
+                </p>
+                <p>
+                    <b>Technology platforms</b> provide business solutions to clients and other platforms. They can
+                    extend, improve, and upgrade your business software to boost speed, productivity, and service
+                    delivery.
+                </p>
+                <p>
+                    Although a technology platform is not a new development, the increased focus on the cloud and
+                    emerging technologies are boosting its importance.
+                </p>
+                <p>
+                    Modern technology platform capabilities cover tools like analytics, database and data management
+                    tools, artificial intelligence, machine learning, and the Internet of Things (IoT). It is the
+                    foundation of modern business systems.
+                </p>
+                <a class='btn' href='types.html'>View Types</a>
+            </div>
+
+            <div class="image-content">
+                <img src="images/PT.jpg" alt="Technology Platform">
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+        if (localStorage.getItem("loggedIn") !== "true") {
+            alert("You must log in first!");
+            window.location.href = "index.html";
+        }
+
+    </script>
+
+</body>
+
+</html>

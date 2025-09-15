@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sign Up</title>
+    <script type="module" src="js/signup.js"></script>
+
+</head>
+
+<body style="margin:0; font-family: Arial, Helvetica, sans-serif;">
+
+    <div style="position:fixed; inset:0;
+              background: linear-gradient(135deg, #131817 0%, #110322 50%, #0b0122 100%);
+              display:flex; align-items:center; justify-content:center;">
+
+        <div role="main" aria-labelledby="signupTitle" style="width:420px; max-width:92%; background:#ffffff; border-radius:12px;
+                box-shadow: 0 10px 30px rgba(14,21,47,0.12); padding:40px 36px;
+                display:flex; flex-direction:column; align-items:center;">
+
+            <h2>Create Account</h2>
+            <form id="signupForm">
+                <label for="email" style="font-size:13px; color:#666; display:block;">Username:
+                    <input type="text" id="signupUser" required placeholder="Enter your email"
+                        style="flex:1; border:0; outline:none; border-bottom:1px solid #e6e6e6; font-size:15px; padding:6px 4px; color:#333;">
+                </label><br><br>
+
+                <label for="password" style="font-size:13px; color:#666; display:block;">Password:
+                    <input type="password" id="signupPass" required placeholder="Create a password"
+                        style="flex:1; border:0; outline:none; border-bottom:1px solid #e6e6e6; font-size:15px; padding:6px 4px; color:#333;">
+                </label><br><br>
+
+                <button type="submit" style="margin-top:6px; width:100%; padding:12px 18px; border-radius:28px; border:0; cursor:pointer;
+           background: linear-gradient(90deg,#0c061f 0%,#1d163f 50%,#110931 100%);
+           color:#fff; font-weight:700; font-size:15px; box-shadow: 0 6px 18px rgba(109,77,255,0.18);">Sign Up</button>
+            </form>
+
+            <div style="width:100%; text-align:center; margin-top:18px; font-size:13px; color:#777;">
+                Already have an account? <a href='index.html'
+                    style='color:#6a5cff; text-decoration:none; font-weight:600;'>Login</a>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
